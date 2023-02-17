@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import { Preheader, Header, HamburgerMenu, Blog } from "../components";
+import { Preheader, Header, HamburgerMenu, Blog, About } from "../components";
 export default function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
@@ -16,6 +16,7 @@ export default function Home() {
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <HamburgerMenu isOpen={isOpen} />
         <Blog />
+        <About />
       </div>
     </>
   );
