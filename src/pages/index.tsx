@@ -1,6 +1,13 @@
 import Head from "next/head";
 import { useState } from "react";
-import { Preheader, Header, HamburgerMenu, Blog, About } from "../components";
+import {
+  Preheader,
+  Header,
+  HamburgerMenu,
+  Blog,
+  About,
+  Services,
+} from "../components";
 export default function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
@@ -14,9 +21,10 @@ export default function Home() {
       <div className='container mx-auto relative max-w-full'>
         <Preheader />
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
-        <HamburgerMenu isOpen={isOpen} />
+        <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
         <Blog />
         <About />
+        <Services />
       </div>
     </>
   );

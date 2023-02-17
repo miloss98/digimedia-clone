@@ -3,6 +3,9 @@ import logo from "../../../public/assets/logo.png";
 import { X, Menu } from "react-feather";
 
 const Header = ({ isOpen, setIsOpen }: any) => {
+  const handleClose = () => {
+    setIsOpen(false);
+  };
   return (
     <header className='flex flex-row justify-between items-center h-20 px-4 shadow-md md:px-10 md:h-24 lg:px-20'>
       <div>
@@ -10,10 +13,10 @@ const Header = ({ isOpen, setIsOpen }: any) => {
       </div>
       <nav>
         <div className='hidden md:flex md:justify-center md:items-center md:gap-5 lg:gap-10'>
-          <a href='#home' className='hover:text-pink'>
+          <a href='#home' onClick={handleClose} className='hover:text-pink'>
             Home
           </a>
-          <a href='#about' className='hover:text-pink'>
+          <a href='#about' onClick={handleClose} className='hover:text-pink'>
             About
           </a>
           <a href='#services' className='hover:text-pink'>
