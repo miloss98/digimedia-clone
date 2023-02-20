@@ -7,7 +7,7 @@ const Blog = () => {
       id='home'
       className='flex flex-col justify-between items-center h-auto w-full bg-[url("./../../public/assets/blog-left-dec.jpg")] bg-no-repeat bg-center px-4 mt-5 md:px-10 md:flex-row md:py-10 lg:px-20'
     >
-      <div className='flex flex-col  justify-center items-center w-full my-10 space-y-6 md:w-1/2 md:items-start'>
+      <div className='flex flex-col justify-center items-center w-full my-10 space-y-6 md:w-1/2 md:items-start'>
         <p className='w-3/4 font-semibold text-lg text-center text-pink uppercase md:text-left md:text-xl lg:text-2xl'>
           Digital media agency
         </p>

@@ -7,6 +7,7 @@ import {
   Blog,
   About,
   Services,
+  Quote,
 } from "../components";
 export default function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -25,6 +26,7 @@ export default function Home() {
         <Blog />
         <About />
         <Services />
+        <Quote />
       </div>
     </>
   );
