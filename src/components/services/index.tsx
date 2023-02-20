@@ -1,12 +1,62 @@
-import { Check } from "react-feather";
+import Image from "next/image";
+import { useState } from "react";
+import { Check, Activity, Cpu, BarChart2, HardDrive } from "react-feather";
+import serviceImg1 from "../../../public/assets/services-image1.jpg";
+import serviceImg2 from "../../../public/assets/services-image2.jpg";
+import serviceImg3 from "../../../public/assets/services-image3.jpg";
+import serviceImg4 from "../../../public/assets/services-image4.jpg";
+
+const services = [
+  {
+    id: 0,
+    name: "SEO Analysis & Daily Reports",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
+    tags: ["Optimized Template", "Data Info", "SEO Analysis"],
+    image: serviceImg1,
+  },
+  {
+    id: 1,
+    name: "Healthy Food & Life",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
+    tags: ["Optimized Template", "Data Info"],
+    image: serviceImg2,
+  },
+  {
+    id: 2,
+    name: "Car Re-search & Transport",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
+    tags: [
+      "Optimized Template",
+      "Data Info",
+      "Optimized Template",
+      "Data Info",
+      "SEO Analysis",
+    ],
+    image: serviceImg3,
+  },
+  {
+    id: 3,
+    name: "Online Shopping & Tracking ID",
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
+    tags: [
+      "Optimized Template",
+      "Data Info",
+      "Data Info",
+      "Optimized Template",
+    ],
+    image: serviceImg4,
+  },
+];
 
 const Services = () => {
+  const [servicesData] = useState(services);
+  const [currentAccordion, setCurrentAccordion] = useState<number>(0);
   return (
     <div
       id='services'
       className='flex flex-col justify-center items-center w-full mt-16 px-4 md:px-10 lg:px-20 '
     >
-      <section className='flex flex-col justify-center items-center mb-4 gap-4 md:items-center md:mb-0'>
+      <section className='flex flex-col justify-center items-center mb-4 gap-4 md:mb-0'>
         <p className='font-semibold text-lg text-center text-purple uppercase md:text-xl lg:text-2xl'>
           Our services
         </p>
@@ -15,32 +65,65 @@ const Services = () => {
         </p>
         <div className='h-0.5 w-16 bg-purple'> </div>
       </section>
+
+      {/* accordion header */}
       <section className='flex flex-col justify-center items-center w-full'>
-        {/* accordion switcher */}
-        <div className='flex w-full justify-center items-center h-16 shadow-gray shadow-lg mt-12 mb-4'>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
+        <div className='flex w-full justify-center items-center gap-2 py-2 mt-12 mb-4 rounded-lg md:h-20 md:gap-5 lg:h-24 lg:gap-8'>
+          <div
+            onClick={() => setCurrentAccordion(0)}
+            className='bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray p-2 md:h-16 md:w-16 lg:h-20 lg:w-20'
+          >
+            <Activity className='text-red h-full w-full' />
+          </div>
+          <div
+            onClick={() => setCurrentAccordion(1)}
+            className='bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray p-2 md:h-16 md:w-16 lg:h-20 lg:w-20'
+          >
+            <BarChart2 className='text-green h-full w-full' />
+          </div>
+          <div
+            onClick={() => setCurrentAccordion(2)}
+            className='bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray p-2 md:h-16 md:w-16 lg:h-20 lg:w-20'
+          >
+            <Cpu className='text-orange h-full w-full' />
+          </div>
+          <div
+            onClick={() => setCurrentAccordion(3)}
+            className='bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray p-2 md:h-16 md:w-16 lg:h-20 lg:w-20'
+          >
+            <HardDrive className='text-purple h-full w-full' />
+          </div>
         </div>
-        {/* content */}
-        <div className='flex flex-col pl-4 w-full shadow-black shadow-lg rounded-lg'>
-          <div className='py-8'>
-            <p className='font-semibold text-lg text-pink pb-4 capitalize'>
-              SEO Analysis & Daily Reports
-            </p>
-            <ul>
-              <li className='flex'>
-                <Check /> Optimized Template
-              </li>
-              <li className='flex'>
-                <Check /> Data Info
-              </li>
-              <li className='flex'>
-                <Check /> SEO Analysis
-              </li>
-            </ul>
+
+        {/* accordion content */}
+        <div className='flex flex-col justify-center items-center w-full px-4 mb-10 shadow-darkGray shadow-md rounded-lg'>
+          <div className='py-8 px-4 lg:flex lg:flex-row'>
+            <div className='md:flex md:flex-col md:justify-center md:items-start'>
+              <p className='font-semibold text-lg text-pink py-4 capitalize md:text-xl lg:text-2xl'>
+                {servicesData[currentAccordion].name}
+              </p>
+              <p className='text-darkGray text-sm py-4 w-3/4 md:text-md lg:text-lg'>
+                {servicesData[currentAccordion].text}
+              </p>
+              <ul className='py-8'>
+                {servicesData[currentAccordion].tags.map((tag) => {
+                  return (
+                    <li
+                      className='flex items-center text-sm md:text-md lg:text-lg'
+                      key={Math.random()}
+                    >
+                      <Check className='text-green' /> {tag}
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className='md:flex md:flex-col md:justify-center'>
+              <Image
+                src={servicesData[currentAccordion].image}
+                alt='service_image1'
+              />
+            </div>
           </div>
         </div>
       </section>
