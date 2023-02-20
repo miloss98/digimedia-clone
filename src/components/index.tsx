@@ -1,9 +1,19 @@
 import Preheader from "./preheader";
 import Header from "./header";
 import HamburgerMenu from "./hamburger-menu";
-import Blog from "./blog";
+import HomeSection from "./home";
 import About from "./about";
 import Services from "./services";
 import Quote from "./quote";
+import Projects from "./projects";
 
-export { Preheader, Header, HamburgerMenu, Blog, About, Services, Quote };
+export {
+  Preheader,
+  Header,
+  HamburgerMenu,
+  HomeSection,
+  About,
+  Services,
+  Quote,
+  Projects,
+};

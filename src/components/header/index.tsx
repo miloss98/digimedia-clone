@@ -25,9 +25,6 @@ const Header = ({ isOpen, setIsOpen }: any) => {
           <a href='#projects' className='hover:text-pink'>
             Projects
           </a>
-          <a href='#blog' className='hover:text-pink'>
-            Blog
-          </a>
           <a href='#contact' className='hover:text-pink'>
             Contact
           </a>

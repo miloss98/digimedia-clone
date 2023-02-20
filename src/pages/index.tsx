@@ -4,10 +4,11 @@ import {
   Preheader,
   Header,
   HamburgerMenu,
-  Blog,
+  HomeSection,
   About,
   Services,
   Quote,
+  Projects,
 } from "../components";
 export default function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -23,10 +24,11 @@ export default function Home() {
         <Preheader />
         <Header isOpen={isOpen} setIsOpen={setIsOpen} />
         <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
-        <Blog />
+        <HomeSection />
         <About />
         <Services />
         <Quote />
+        <Projects />
       </div>
     </>
   );

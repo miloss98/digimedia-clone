@@ -21,7 +21,7 @@ const Quote = () => {
           type='email'
           placeholder='Email Address'
         />
-        <button className='w-2/4 h-8 rounded-lg bg-purple text-sm text-white md:w-1/4 md:h-10 md:text-lg lg:w-1/5 '>
+        <button className='w-2/4 h-8 rounded-lg bg-purple text-sm text-white hover:bg-pink md:w-1/4 md:h-10 md:text-lg lg:w-1/5 '>
           Get quote now
         </button>
       </div>

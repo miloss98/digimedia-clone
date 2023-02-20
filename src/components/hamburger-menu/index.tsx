@@ -40,15 +40,6 @@ const HamburgerMenu = ({ isOpen, setIsOpen }: any) => {
             </div>
             <div className='flex justify-center items-center w-full h-10 border-lightGray border-b'>
               <a
-                href='#blog'
-                onClick={() => setIsOpen(false)}
-                className='hover:text-pink'
-              >
-                Blog
-              </a>
-            </div>
-            <div className='flex justify-center items-center w-full h-10 border-lightGray border-b'>
-              <a
                 href='#contact'
                 onClick={() => setIsOpen(false)}
                 className='hover:text-pink'
