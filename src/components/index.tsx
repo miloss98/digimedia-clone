@@ -6,6 +6,7 @@ import About from "./about";
 import Services from "./services";
 import Quote from "./quote";
 import Projects from "./projects";
+import Contact from "./contact";
 
 export {
   Preheader,
@@ -16,4 +17,5 @@ export {
   Services,
   Quote,
   Projects,
+  Contact,
 };

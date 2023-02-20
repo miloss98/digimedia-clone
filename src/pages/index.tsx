@@ -9,6 +9,7 @@ import {
   Services,
   Quote,
   Projects,
+  Contact,
 } from "../components";
 export default function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -29,6 +30,7 @@ export default function Home() {
         <Services />
         <Quote />
         <Projects />
+        <Contact />
       </div>
     </>
   );

@@ -17,7 +17,7 @@ const Preheader = () => {
             href='#'
             className='text-xs text-darkGray pr-0 pl-2 hover:underline hover:text-pink md:text-base md:pr-10'
           >
-            digimedia@company.com
+            digimedia@info.com
           </a>
         </div>
         <div className='flex flex-row items-center'>
