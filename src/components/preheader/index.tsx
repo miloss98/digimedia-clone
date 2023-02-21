@@ -33,18 +33,18 @@ const Preheader = () => {
       {/* social links */}
       <div className='flex flex-wrap items-center justify-center gap-1'>
         <p className='hidden text-darkGray pr-2 md:block'> Find us: </p>
-        <div className='flex justify-center items-center h-8 w-8 bg-white  hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
-          <a href='https://www.facebook.com' target='_blank'>
+        <div className='flex justify-center items-center h-8 w-8 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
+          <a href='https://www.twitter.com' target='_blank'>
             <Twitter className='h-6 w-6 md:h-5 md:w-5 text-twitterBlue' />
           </a>
         </div>
         <div className='flex justify-center items-center h-8 w-8 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
-          <a href='https://www.facebook.com' target='_blank'>
+          <a href='https://www.linkedin.com' target='_blank'>
             <Linkedin className='h-6 w-6 md:h-5 md:w-5 text-linkedIn' />
           </a>
         </div>
         <div className='flex justify-center items-center h-8 w-8 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
-          <a href='https://www.facebook.com' target='_blank'>
+          <a href='https://www.github.com' target='_blank'>
             <GitHub className='h-6 w-6 md:h-5 md:w-5 text-github' />
           </a>
         </div>
