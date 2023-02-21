@@ -2,8 +2,8 @@ const HamburgerMenu = ({ isOpen, setIsOpen }: any) => {
   return (
     <>
       {isOpen && (
-        <section className='absolute flex justify-center items-center w-full md:hidden'>
-          <div className='flex flex-col justify-center items-center my-1 w-full border-lightGray bg-white shadow shadow-lg'>
+        <section className='sticky top-20 flex justify-center items-center w-full md:hidden'>
+          <div className='flex flex-col justify-center items-center my-0 w-full border-lightGray bg-white shadow shadow-lg'>
             <div className='flex justify-center items-center w-full h-10 border-lightGray border-b'>
               <a
                 href='#home'

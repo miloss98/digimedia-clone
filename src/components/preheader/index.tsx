@@ -31,30 +31,21 @@ const Preheader = () => {
         </div>
       </div>
       {/* social links */}
-      <div className='flex flex-wrap items-start justify-center gap-1'>
-        <div className='flex justify-center items-center h-6 w-6 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
+      <div className='flex flex-wrap items-center justify-center gap-1'>
+        <p className='hidden text-darkGray pr-2 md:block'> Find us: </p>
+        <div className='flex justify-center items-center h-8 w-8 bg-white  hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
           <a href='https://www.facebook.com' target='_blank'>
-            <Facebook className='h-3 w-3 md:h-5 md:w-5 text-facebook' />
+            <Twitter className='h-6 w-6 md:h-5 md:w-5 text-twitterBlue' />
           </a>
         </div>
-        <div className='flex justify-center items-center h-6 w-6 bg-white  hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
+        <div className='flex justify-center items-center h-8 w-8 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
           <a href='https://www.facebook.com' target='_blank'>
-            <Twitter className='h-3 w-3 md:h-5 md:w-5 text-twitterBlue' />
+            <Linkedin className='h-6 w-6 md:h-5 md:w-5 text-linkedIn' />
           </a>
         </div>
-        <div className='flex justify-center items-center h-6 w-6 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
+        <div className='flex justify-center items-center h-8 w-8 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
           <a href='https://www.facebook.com' target='_blank'>
-            <Instagram className='h-3 w-3 md:h-5 md:w-5 text-pink' />
-          </a>
-        </div>
-        <div className='flex justify-center items-center h-6 w-6 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
-          <a href='https://www.facebook.com' target='_blank'>
-            <Linkedin className='h-3 w-3 md:h-5 md:w-5 text-linkedIn' />
-          </a>
-        </div>
-        <div className='flex justify-center items-center h-6 w-6 bg-white hover:bg-pinkHover rounded-full md:h-8 md:w-8'>
-          <a href='https://www.facebook.com' target='_blank'>
-            <GitHub className='h-3 w-3 md:h-5 md:w-5 text-github' />
+            <GitHub className='h-6 w-6 md:h-5 md:w-5 text-github' />
           </a>
         </div>
       </div>

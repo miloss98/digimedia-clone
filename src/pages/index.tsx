@@ -10,6 +10,7 @@ import {
   Quote,
   Projects,
   Contact,
+  Footer,
 } from "../components";
 export default function Home() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,6 +32,7 @@ export default function Home() {
         <Quote />
         <Projects />
         <Contact />
+        <Footer />
       </div>
     </>
   );
