@@ -1,13 +1,5 @@
 import Link from "next/link";
-import {
-  Mail,
-  Phone,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  GitHub,
-} from "react-feather";
+import { Mail, Phone, Twitter, Linkedin, GitHub } from "react-feather";
 const Preheader = () => {
   return (
     <section className="flex justify-between items-center h-20 px-4 md:h-14 bg-preheader md:px-10 lg:px-20">
