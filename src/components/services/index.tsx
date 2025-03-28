@@ -8,14 +8,14 @@ const services = [
     name: "SEO Analysis & Daily Reports",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
     tags: ["Optimized Template", "Data Info", "SEO Analysis"],
-    image: "/assets/services-image1.jpg",
+    image: "/services-image1.jpg",
   },
   {
     id: 1,
     name: "Healthy Food & Life",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
     tags: ["Optimized Template", "Data Info"],
-    image: "/assets/services-image2.jpg",
+    image: "/services-image2.jpg",
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const services = [
       "Data Info",
       "SEO Analysis",
     ],
-    image: "/assets/services-image3.jpg",
+    image: "/services-image3.jpg",
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const services = [
       "Data Info",
       "Optimized Template",
     ],
-    image: "/assets/services-image4.jpg",
+    image: "/services-image4.jpg",
   },
 ];
 

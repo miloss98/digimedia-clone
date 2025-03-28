@@ -1,5 +1,4 @@
 import Image from "next/image";
-import about from "../../../public/assets/about.png";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
@@ -9,8 +8,8 @@ const About = () => {
       id="about"
       className="flex flex-col-reverse justify-center items-start w-full px-4 md:flex-row md:px-10 lg:px-20"
     >
-      <div className="hidden md:flex md:justify-center md:items-center md:h-screen md:w-1/2">
-        <Image src={about} alt="about" />
+      <div className="hidden md:flex md:justify-center md:items-center md:h-screen md:w-1/2 relative">
+        <Image src={"/about.png"} alt="about" fill />
       </div>
       <div className="flex flex-col justify-center items-center pl-4 mt-20 h-1/2 w-full md:h-full md:w-1/2 md:gap-10">
         <section className="flex flex-col justify-center items-center mb-4 gap-4 md:items-start md:mb-0">

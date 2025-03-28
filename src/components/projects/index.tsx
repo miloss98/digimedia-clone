@@ -6,25 +6,25 @@ const Projects = () => {
       id: 0,
       name: "Website Building",
       category: "development",
-      image: "/assets/portfolio1.png",
+      image: "/portfolio1.png",
     },
     {
       id: 1,
       name: "Web-App Building",
       category: "development",
-      image: "/assets/portfolio2.jpeg",
+      image: "/portfolio2.jpeg",
     },
     {
       id: 2,
       name: "UI/UX",
       category: "design",
-      image: "/assets/portfolio3.jpeg",
+      image: "/portfolio3.jpeg",
     },
     {
       id: 3,
       name: "Penetration Testing",
       category: "security",
-      image: "/assets/portfolio4.jpeg",
+      image: "/portfolio4.jpeg",
     },
   ];
   return (

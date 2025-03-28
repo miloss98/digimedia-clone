@@ -9,12 +9,7 @@ const Header = ({ isOpen, setIsOpen }: any) => {
   return (
     <header className="sticky top-0 bg-white flex flex-row justify-between items-center h-20 px-4 shadow-md md:px-10 md:h-24 lg:px-20">
       <div>
-        <Image
-          src="/assets/logo.png"
-          alt="digimedia_logo"
-          width={150}
-          height={50}
-        />
+        <Image src="/logo.png" alt="digimedia_logo" width={150} height={50} />
       </div>
       <nav>
         <div className="hidden md:flex md:justify-center md:items-center md:gap-5 lg:gap-10">
