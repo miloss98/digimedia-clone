@@ -1,6 +1,6 @@
 const Quote = () => {
   return (
-    <div className='flex flex-col justify-center items-center px-4 h-96 w-full my-16 bg-[url("./../../public/quote-bg.jpg")] bg-no-repeat bg-center bg-cover'>
+    <div className='flex flex-col justify-center items-center px-4 h-96 w-full my-16 bg-[url("/quote-bg.jpg")] bg-no-repeat bg-center bg-cover'>
       <div className="flex flex-col justify-center items-center mb-4">
         <p className="font-semibold text-md text-center text-white uppercase mb-4 md:text-left md:text-lg lg:text-xl">
           Get your free quote

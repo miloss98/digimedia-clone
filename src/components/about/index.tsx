@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import about from "/public/about.png";
+import about from "public/about.png";
 
 const About = () => {
   return (

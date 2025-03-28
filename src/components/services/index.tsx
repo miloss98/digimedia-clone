@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Check, Activity, Cpu, BarChart2, HardDrive } from "react-feather";
-import servicesImage1 from "/public/services-image1.jpg";
-import servicesImage2 from "/public/services-image2.jpg";
-import servicesImage3 from "/public/services-image3.jpg";
-import servicesImage4 from "/public/services-image4.jpg";
+import servicesImage1 from "public/services-image1.jpg";
+import servicesImage2 from "public/services-image2.jpg";
+import servicesImage3 from "public/services-image3.jpg";
+import servicesImage4 from "public/services-image4.jpg";
 
 const services = [
   {
@@ -19,7 +19,7 @@ const services = [
     name: "Healthy Food & Life",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
     tags: ["Optimized Template", "Data Info"],
-    image: servicesImage2,
+    image: "/services-image2.jpg",
   },
   {
     id: 2,

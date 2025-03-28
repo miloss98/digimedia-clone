@@ -1,8 +1,8 @@
 import Image from "next/image";
-import portfolio1 from "/public/portfolio1.png";
-import portfolio2 from "/public/portfolio2.jpeg";
-import portfolio3 from "/public/portfolio3.jpeg";
-import portfolio4 from "/public/portfolio4.jpeg";
+import portfolio1 from "public/portfolio1.png";
+import portfolio2 from "public/portfolio2.jpeg";
+import portfolio3 from "public/portfolio3.jpeg";
+import portfolio4 from "public/portfolio4.jpeg";
 
 const Projects = () => {
   const projects = [
