@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Check, Activity, Cpu, BarChart2, HardDrive } from "react-feather";
+import servicesImage1 from "/public/services-image1.jpg";
+import servicesImage2 from "/public/services-image2.jpg";
+import servicesImage3 from "/public/services-image3.jpg";
+import servicesImage4 from "/public/services-image4.jpg";
 
 const services = [
   {
@@ -8,14 +12,14 @@ const services = [
     name: "SEO Analysis & Daily Reports",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
     tags: ["Optimized Template", "Data Info", "SEO Analysis"],
-    image: "/services-image1.jpg",
+    image: servicesImage1,
   },
   {
     id: 1,
     name: "Healthy Food & Life",
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasilaborum inventore eos facere, ex quos",
     tags: ["Optimized Template", "Data Info"],
-    image: "/services-image2.jpg",
+    image: servicesImage2,
   },
   {
     id: 2,
@@ -28,7 +32,7 @@ const services = [
       "Data Info",
       "SEO Analysis",
     ],
-    image: "/services-image3.jpg",
+    image: servicesImage3,
   },
   {
     id: 3,
@@ -40,7 +44,7 @@ const services = [
       "Data Info",
       "Optimized Template",
     ],
-    image: "/services-image4.jpg",
+    image: servicesImage4,
   },
 ];
 
@@ -67,25 +71,25 @@ const Services = () => {
         <div className="flex w-full justify-center items-center gap-2 py-2 mt-12 mb-4 rounded-lg md:h-20 md:gap-5 lg:h-24 lg:gap-8">
           <div
             onClick={() => setCurrentAccordion(0)}
-            className="bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray p-2 md:h-16 md:w-16 lg:h-20 lg:w-20"
+            className="bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray md:p-2 md:h-16 md:w-16 lg:h-20 lg:w-20"
           >
             <Activity className="text-red h-full w-full" />
           </div>
           <div
             onClick={() => setCurrentAccordion(1)}
-            className="bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray p-2 md:h-16 md:w-16 lg:h-20 lg:w-20"
+            className="bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray md:p-2 md:h-16 md:w-16 lg:h-20 lg:w-20"
           >
             <BarChart2 className="text-green h-full w-full" />
           </div>
           <div
             onClick={() => setCurrentAccordion(2)}
-            className="bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray p-2 md:h-16 md:w-16 lg:h-20 lg:w-20"
+            className="bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray md:p-2 md:h-16 md:w-16 lg:h-20 lg:w-20"
           >
             <Cpu className="text-orange h-full w-full" />
           </div>
           <div
             onClick={() => setCurrentAccordion(3)}
-            className="bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray p-2 md:h-16 md:w-16 lg:h-20 lg:w-20"
+            className="bg-white h-12 w-12 p-1 shadow-darkGray shadow-md rounded-full hover:cursor-pointer hover:bg-lightGray md:p-2 md:h-16 md:w-16 lg:h-20 lg:w-20"
           >
             <HardDrive className="text-purple h-full w-full" />
           </div>
@@ -114,12 +118,12 @@ const Services = () => {
                 })}
               </ul>
             </div>
-            <div className="md:flex md:flex-col md:justify-center relative">
+            <div className="md:flex md:flex-col md:justify-center">
               <Image
                 src={servicesData[currentAccordion].image}
                 alt="service_image1"
-                fill
-                className="w-full h-full"
+                width={500}
+                height={500}
               />
             </div>
           </div>

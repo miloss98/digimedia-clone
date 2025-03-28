@@ -1,4 +1,8 @@
 import Image from "next/image";
+import portfolio1 from "/public/portfolio1.png";
+import portfolio2 from "/public/portfolio2.jpeg";
+import portfolio3 from "/public/portfolio3.jpeg";
+import portfolio4 from "/public/portfolio4.jpeg";
 
 const Projects = () => {
   const projects = [
@@ -6,25 +10,25 @@ const Projects = () => {
       id: 0,
       name: "Website Building",
       category: "development",
-      image: "/portfolio1.png",
+      image: portfolio1,
     },
     {
       id: 1,
       name: "Web-App Building",
       category: "development",
-      image: "/portfolio2.jpeg",
+      image: portfolio2,
     },
     {
       id: 2,
       name: "UI/UX",
       category: "design",
-      image: "/portfolio3.jpeg",
+      image: portfolio3,
     },
     {
       id: 3,
       name: "Penetration Testing",
       category: "security",
-      image: "/portfolio4.jpeg",
+      image: portfolio4,
     },
   ];
   return (
@@ -52,7 +56,7 @@ const Projects = () => {
               <div className="h-3/4 rounded-lg relative">
                 <Image
                   src={image}
-                  alt={image}
+                  alt={name}
                   className="w-full h-full rounded-t-2xl bg-contain"
                   fill
                 />
